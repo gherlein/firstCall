@@ -2,7 +2,7 @@
 node_modules
 package-lock.json
 yarn.lock
-
+cdk-outputs.json
 
 # CDK asset staging directory
 .cdk.staging
