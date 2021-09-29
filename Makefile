@@ -6,9 +6,11 @@ deploy:
 
 
 logs:
-	aws logs tail $(LAMBDALOG) --follow
+	aws logs tail $(LAMBDALOG) --follow 
 
 clean:
 	-rm *~
 	-rm cdk-outputs.json
 
+watch:
+	saw watch $(LAMBDALOG) --filter INFO --expand
