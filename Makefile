@@ -6,7 +6,7 @@ deploy:
 
 
 logs:
-	aws logs tail $(LAMBDALOG) --follow 
+	aws logs tail $(LAMBDALOG) --follow --format short --filter-pattern INFO
 
 clean:
 	-rm *~
