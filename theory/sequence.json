@@ -1,0 +1,92 @@
+
+
+{
+    "SchemaVersion": "1.0",
+    "Sequence": 1,
+    "InvocationEventType": "NEW_INBOUND_CALL",
+    "CallDetails": {
+        "TransactionId": "6405ec42-6621-429d-951d-32fd1a9211f0",
+        "AwsAccountId": "497939524935",
+        "AwsRegion": "us-west-2",
+        "SipRuleId": "b6a2740e-acfb-40c5-86fa-566d02451163",
+        "SipMediaApplicationId": "fce62cce-6151-4b43-a99f-c5077f37865e",
+        "Participants": [
+            {
+                "CallId": "cbcd2353-98a8-4611-88e3-2534b5198260",
+                "ParticipantTag": "LEG-A",
+                "To": "+12247040992",
+                "From": "+14153687546",
+                "Direction": "Inbound",
+                "StartTimeInMilliseconds": "1632918957139"
+            }
+        ]
+    }
+}
+
+{
+    "SchemaVersion": "1.0",
+    "Sequence": 1,
+    "InvocationEventType": "ACTION_SUCCESSFUL",
+    "ActionData": {
+        "Type": "PlayAudio",
+        "Parameters": {
+            "AudioSource": {
+                "Type": "S3",
+                "BucketName": "firstcallstack-wavfiles98e3397d-ybfuumz7zsuy",
+                "Key": "hello-goodbye.wav"
+            },
+            "Repeat": 1,
+            "CallId": "cbcd2353-98a8-4611-88e3-2534b5198260"
+        }
+    },
+    "CallDetails": {
+        "TransactionId": "6405ec42-6621-429d-951d-32fd1a9211f0",
+        "AwsAccountId": "497939524935",
+        "AwsRegion": "us-west-2",
+        "SipRuleId": "b6a2740e-acfb-40c5-86fa-566d02451163",
+        "SipMediaApplicationId": "fce62cce-6151-4b43-a99f-c5077f37865e",
+        "Participants": [
+            {
+                "CallId": "cbcd2353-98a8-4611-88e3-2534b5198260",
+                "ParticipantTag": "LEG-A",
+                "To": "+12247040992",
+                "From": "+14153687546",
+                "Direction": "Inbound",
+                "StartTimeInMilliseconds": "1632918957139",
+                "Status": "Connected"
+            }
+        ]
+    }
+}
+
+{
+    "SchemaVersion": "1.0",
+    "Sequence": 2,
+    "InvocationEventType": "HANGUP",
+    "ActionData": {
+        "Type": "Hangup",
+        "Parameters": {
+            "SipResponseCode": 0,
+            "CallId": "cbcd2353-98a8-4611-88e3-2534b5198260",
+            "ParticipantTag": "LEG-A"
+        }
+    },
+    "CallDetails": {
+        "TransactionId": "6405ec42-6621-429d-951d-32fd1a9211f0",
+        "AwsAccountId": "497939524935",
+        "AwsRegion": "us-west-2",
+        "SipRuleId": "b6a2740e-acfb-40c5-86fa-566d02451163",
+        "SipMediaApplicationId": "fce62cce-6151-4b43-a99f-c5077f37865e",
+        "Participants": [
+            {
+                "CallId": "cbcd2353-98a8-4611-88e3-2534b5198260",
+                "ParticipantTag": "LEG-A",
+                "To": "+12247040992",
+                "From": "+14153687546",
+                "Direction": "Inbound",
+                "StartTimeInMilliseconds": "1632918957139",
+                "Status": "Disconnected"
+            }
+        ]
+    }
+}

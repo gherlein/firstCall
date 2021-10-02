@@ -1,0 +1,1 @@
+{"SchemaVersion":"1.0","Actions":[{"Type":"PlayAudio","Parameters":{"AudioSource":{"Type":"S3","BucketName":"firstcallstack-wavfiles98e3397d-ybfuumz7zsuy","Key":"hello-goodbye.wav"}}}]}
