@@ -42,7 +42,7 @@ exports.handler = async(event, context, callback) => {
 
 async function newCall(event, details) {
     playAudioAction.Parameters.AudioSource.Key = "hello-goodbye.wav";
-    return [playAudioAction];
+    return [playAudioAction,hangupAction];
 }
 
 
